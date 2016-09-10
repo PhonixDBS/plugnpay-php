@@ -152,7 +152,10 @@ function auth($args=array()){
     }
 
     $post_vals = array(
-        'publisher-name' => $this->publisher_name,
+        'publisher-name'     => $this->publisher_name,
+        
+        // ADD publisher password to auth function
+        'publisher-password' => $this->publisher_password,
         'mode'           => 'auth',
         'ipaddress'      => $_SERVER['REMOTE_ADDR'],
 
